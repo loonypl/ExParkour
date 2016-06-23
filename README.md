@@ -6,6 +6,6 @@ Parkour plugin for Minecraft 1.10 server and higher
 ### Plugin is under building and everything can change, for now.
 Plugin version: 2.0<br/>
 Plugin name: ExParkour
-<br/>
+<br/><br/>
 For: Minecraft server 1.10 and higher<br/>
 Java: 8
