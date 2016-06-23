@@ -1,0 +1,42 @@
+# ExParkour plugin
+# author: krzysek
+# version: 2.0
+# : configuration
+
+metrics: true
+
+chat:
+  format: true
+  pattern: '&6[&7%parkour_points%&6] &6[&7%parkour_rank%&6] &a%player%&f: %message%'
+  # available vars:
+  # %parkour_points% - shows player's parkour level (ex. 1024)
+  # %parkour_rank% - shows player's parkour rank (ex. newbie)
+  # %player% - shows player's name
+  # %message% - shows sended message
+
+ranks:
+  newbie: 0
+  noted: 2000
+  good: 5000
+  expert: 10000
+  # how to add more ?
+  # ex. 'test: 100'
+  # where: test - rank name,
+  #        100  - required points
+  #               to earn.
+
+blocks:
+  # when player above:
+  start: # start parkour
+    - WOOL:14
+  end: # end parkour
+    - WOOL:13
+  restart: # restart parkour
+    - PISTON_EXTENSION
+    - BARRIER
+
+messages:
+  start: '&aYou have started the parkour !'
+  end: '&aYou ended the parkour with time %time%' # %time% - shows player's time
+  restart: '&cYou have fallen ! Good luck next time :)'
+  leave: '&aYou have leaved the parkour'

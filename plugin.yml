@@ -1,0 +1,14 @@
+main: io.github.krzysek.expk
+name: ExParkour
+description: Parkour plugin for your sever
+version: 2.0
+author: krzysek
+commands:
+  exparkour:
+    description: Main command of plugin ExParkour
+    permission: expk.default
+    permission-message: §cYou dont have enough permission to this
+  expk:
+    description: Alias for main plugin command (/exparkour)
+    permission: expk.default
+    permission-message: §cYou dont have enough permission to this
