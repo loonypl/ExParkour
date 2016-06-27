@@ -60,7 +60,7 @@ public class User {
         this.players.set("byUUID." + getUUID() + ".parkours.started", 0);
         this.players.set("byUUID." + getUUID() + ".parkours.finished", 0);
         this.players.set("byUUID." + getUUID() + ".rank.points", 0);
-        this.players.set("byUUID." + getUUID() + ".rank.status", "newbie" /* TODO: getting rank for 0 points */);
+        this.players.set("byUUID." + getUUID() + ".rank.status", new Rank().byPoints(0));
     }
 
     public boolean isRegistered() {
